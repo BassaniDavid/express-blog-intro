@@ -4,6 +4,8 @@ const port = 2000
 
 const posts = require('./arrayPost.js')
 
+app.use(express.static('public'))
+
 app.get('/', (req, res) => {
     res.send('Server del mio blog')
 })
